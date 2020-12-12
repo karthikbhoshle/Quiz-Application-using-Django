@@ -1,0 +1,154 @@
+{% extends 'fi.html' %}
+  {% block content %}
+
+
+
+
+     <center>
+         <div style="border: 4px solid ;border-radius: 25px;border-color: #0e8387">
+             <center><h1 style="color:#159cd6">Name: {{s}} </h1></center>
+
+             <form action="check" method="post">
+                 {% csrf_token %}
+                 <div style="border: 3px solid ;border-radius: 25px;border-color: #270fbf;width:500px">
+                     <h3 style="color:#FF0000">What is a correct syntax to output "Hello World" in Java?</h3>
+
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                        <label for="question-1-answers-A">print('Hello World') </label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                        <label for="question-1-answers-B">System.out.println("Hello World");</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                        <label for="question-1-answers-C">printf("Hello World");</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" required/>
+                        <label for="question-1-answers-D"> echo "Hello World";</label>
+                    </div>
+                     <br>
+                 </div>
+                 <br>
+                  <div style="border: 3px solid ;border-radius: 25px;border-color: #270fbf;width:500px">
+                     <h3 style="color:#FF0000">What is function overloading?</h3>
+
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                        <label for="question-2-answers-A"> Methods with same different name but same parameters. </label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                        <label for="question-2-answers-B">Methods with same name but different parameters.</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                        <label for="question-2-answers-C"> Methods with same name, same parameter types but different parameter names.</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" required/>
+                        <label for="question-2-answers-D"> None of the above.</label>
+                    </div>
+                      <br>
+                 </div>
+                 <br>
+                  <div style="border: 3px solid ;border-radius: 25px;border-color: #270fbf;width:500px">
+                     <h3 style="color:#FF0000">When finally block gets executed?</h3>
+
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                        <label for="question-3-answers-A">Only when exception occurs in try block code. </label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                        <label for="question-3-answers-B"> Always when a try block get executed, if exception do not occur.</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                        <label for="question-3-answers-C">Always when a method get executed, no matter exception occured or not.</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" required/>
+                        <label for="question-3-answers-D"> Always when try block get executed, no matter exception occured or not</label>
+                    </div>
+                      <br>
+                 </div>
+                 <br>
+                  <div style="border: 3px solid ;border-radius: 25px;border-color: #270fbf;width:500px">
+                     <h3 style="color:#FF0000">Which class can access all public and protected methods and fields of its super class?</h3>
+
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                        <label for="question-4-answers-A">outer-class </label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                        <label for="question-4-answers-B">sub-class</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                        <label for="question-4-answers-C">inner-class</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" required/>
+                        <label for="question-4-answers-D"> super-class</label>
+                    </div>
+                      <br>
+                 </div>
+                 <br>
+                  <div style="border: 3px solid ;border-radius: 25px;border-color: #270fbf;width:500px">
+                     <h3 style="color:#FF0000">What will be the output of Round(3.7)?</h3>
+
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
+                        <label for="question-5-answers-A">2 </label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
+                        <label for="question-5-answers-B">3</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
+                        <label for="question-5-answers-C">5</label>
+                    </div>
+<br>
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" required/>
+                        <label for="question-5-answers-D"> 4</label>
+                    </div>
+                      <br>
+                 </div>
+                 <br>
+                 <input type="Submit" style="background-color: green;
+  border: none;
+  color: white;
+  padding: 7px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;">
+
+<br>
+             </form>
+             <br>
+</div></center>
+
+
+{% endblock %}
